@@ -5,9 +5,6 @@ using DataStructures
 using DocumenterInterLinks
 using Literate
 
-# UPDATE FOR CURRENT MODULE NAME HERE
-const _DOCS_BASE_URL = "https://sienna-platform.github.io/StorageSystemsSimulations.jl/stable"
-
 links = InterLinks(
     "PowerSimulations" => "https://sienna-platform.github.io/PowerSimulations.jl/stable/",
 )
