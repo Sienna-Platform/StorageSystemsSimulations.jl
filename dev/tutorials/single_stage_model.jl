@@ -28,6 +28,11 @@ c_sys5_bat = build_system(
 orcd = get_component(ReserveDemandCurve, c_sys5_bat, "ORDC1")
 set_available!(orcd, false)
 
+res_up = get_component(VariableReserve{ReserveUp}, c_sys5_bat, "Reserve3")
+set_requirement!(res_up, 2.0)
+res_down = get_component(VariableReserve{ReserveDown}, c_sys5_bat, "Reserve4")
+set_requirement!(res_down, 1.0)
+
 batt = get_component(EnergyReservoirStorage, c_sys5_bat, "Bat2")
 
 operation_cost = get_operation_cost(batt)
